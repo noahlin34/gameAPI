@@ -1467,24 +1467,25 @@
     ]
   },
   "packageFolders": {
-    "/Users/noah/.nuget/packages/": {}
+    "/home/nglin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/noah/gameAPI/gameAPI.csproj",
+      "projectUniqueName": "/home/nglin/source/gameAPI/gameAPI.csproj",
       "projectName": "gameAPI",
-      "projectPath": "/Users/noah/gameAPI/gameAPI.csproj",
-      "packagesPath": "/Users/noah/.nuget/packages/",
-      "outputPath": "/Users/noah/gameAPI/obj/",
+      "projectPath": "/home/nglin/source/gameAPI/gameAPI.csproj",
+      "packagesPath": "/home/nglin/.nuget/packages/",
+      "outputPath": "/home/nglin/source/gameAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/noah/.nuget/NuGet/NuGet.Config"
+        "/home/nglin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1503,7 +1504,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -1541,7 +1542,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

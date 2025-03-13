@@ -12,7 +12,17 @@ builder.Services.AddOpenApiDocument(config => {
     config.Version = "v1";
 });
 
+builder.Services.AddCors(options => {
+    options.AddPolicy("AllowAll", builder => {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment()) {
     app.UseOpenApi();
@@ -38,7 +48,7 @@ app.MapPost("/players", async (Player player, PlayerDB db) => {
     db.Players.Add(player);
     await db.SaveChangesAsync();
 
-    return Results.Created($"/players/{player.Id}", player);
+    return Results.Created($"{player.Id}", player);
 });
 
 //function to update hiscore for given player
